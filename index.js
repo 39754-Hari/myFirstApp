@@ -133,7 +133,7 @@ res.send('Addition :'+result);
 console.log(req.body)
 });
 app.post('/divide', (req, res) => { 
-if(req.body.result.parameters.Lang === 'Tamil'){
+if(req.body.result.action === 'movie.tamil'){
 var result = req.body.result.parameters.data1/req.body.result.parameters.data2;
 res.setHeader('Content-Type', 'application/json');
 res.send(JSON.stringify({
