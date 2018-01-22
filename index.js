@@ -22,6 +22,8 @@ res.send('Product :'+result);
 console.log(req.query)
 });
 app.get('/hi', (req, res) => res.send('Hello There!'))
+app.get('/', (req, res) => res.send('Hello...!'))
+
 
 
 
