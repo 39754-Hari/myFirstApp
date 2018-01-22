@@ -144,6 +144,17 @@ res.send(JSON.stringify({
 }));
 console.log(req.body)
 }
+if(req.body.result.action === 'movie.telugu'){
+var result = req.body.result.parameters.data1*req.body.result.parameters.data2;
+res.setHeader('Content-Type', 'application/json');
+res.send(JSON.stringify({
+    "speech": "Hello Your result : "+result,
+    "displayText": result,
+    "data": {"result": result},
+    "source": "dialogflow"
+}));
+console.log(req.body)
+}
 else {
 	console.log(req.body)
 }
