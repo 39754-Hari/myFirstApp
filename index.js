@@ -133,7 +133,7 @@ res.send('Addition :'+result);
 console.log(req.body)
 });
 app.post('/divide', (req, res) => { 
-var result = request.body.result.parameters.data1/request.body.result.parameters.data2;
+var result = req.body.result.parameters.data1/req.body.result.parameters.data2;
 res.setHeader('Content-Type', 'application/json');
 res.send(JSON.stringify({
     "speech": "Hello Your result : "+result,
