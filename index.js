@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const bodyparser = require('body-parser')
 
-
+/*
 const DialogflowApp = require('actions-on-google').DialogflowApp; // Google Assistant helper library
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
   console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers));
@@ -125,7 +125,7 @@ let action = request.body.result.action;
   }
 }
 }
-  
+  */
 app.use(bodyparser.json());
 app.post('/add', (req, res) => { 
 var result = req.body.data1+req.body.data2;
