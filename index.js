@@ -136,7 +136,7 @@ app.post('/divide', (req, res) => {
 var result = req.body.data1/req.body.data2;
 res.setHeader('Content-Type', 'application/json');
 res.send(JSON.stringify({
-    "speech": "Hello",
+    "speech": "Hello Your result : "+result,
     "displayText": result,
     "data": {"result": result},
     "source": "dialogflow"
