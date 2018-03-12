@@ -9,6 +9,7 @@ app.use(express.static('html'));
 app.post('/welcome', (req, res) =>{ 
   console.log('initial req:',req.body.result.resolvedQuery);
   logger.info('initial req:',req.body.result.resolvedQuery);
+  
   /*if(req.body.originalRequest.source === 'facebook'){
     facebook.operation(req,res);
   }
