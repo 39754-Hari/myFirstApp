@@ -4,7 +4,7 @@ const bodyparser = require('body-parser')
 const { DialogflowApp } = require('actions-on-google');
 app.use(bodyparser.json());
 app.use(express.static('html'));
-app.post('/pioneerServiceNow', (req, res) =>{ 
+app.post('/welcome', (req, res) =>{ 
   console.log('initial req:',req.body);
   if(req.body.originalRequest.source === 'facebook'){
     facebook.operation(req,res);
@@ -21,28 +21,6 @@ app.post('/pioneerServiceNow', (req, res) =>{
   }
 });
 
-app.get('/authorize', (req, res) =>{ 
-  console.log('initial req:',req);
-  //googleLogin.getAuth0Tocken();
-    
-  var resObj = {}; 
-    resObj={
-    "speech": "",
-    "messages": [
-      {
-        "type": 2,
-        "platform": "facebook",
-        "title": "Hi Welcome..!",
-        "replies": [
-          "Exit",
-          "Main menu"
-        ]
-      }
-      ]
-    };
-    res.json(resObj);
-
-}); 
 
 
 app.listen(process.env.port||process.env.PORT||3000, () => console.log('App started Running!'));
