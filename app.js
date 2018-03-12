@@ -5,7 +5,7 @@ const { DialogflowApp } = require('actions-on-google');
 app.use(bodyparser.json());
 app.use(express.static('html'));
 app.post('/welcome', (req, res) =>{ 
-  console.log('initial req:',req.body);
+  console.log('initial req:',req);
   /*if(req.body.originalRequest.source === 'facebook'){
     facebook.operation(req,res);
   }
