@@ -6,7 +6,7 @@ app.use(bodyparser.json());
 app.use(express.static('html'));
 app.post('/welcome', (req, res) =>{ 
   console.log('initial req:',req.body);
-  if(req.body.originalRequest.source === 'facebook'){
+  /*if(req.body.originalRequest.source === 'facebook'){
     facebook.operation(req,res);
   }
   else if(req.body.originalRequest.source === 'slack'){
@@ -18,7 +18,7 @@ app.post('/welcome', (req, res) =>{
   else if(req.body.originalRequest.source === 'google'){    
     const googleApp = new DialogflowApp({ request: req, response: res });
     googleApp.handleRequest(googleAPI);
-  }
+  }*/
 });
 
 
