@@ -1,12 +1,6 @@
 const express = require('express')
 const app = express()
 const bodyparser = require('body-parser')
-var serviceNowApi = require('./serviceNowApi')
-var facebook = require('./facebook')
-var slack = require('./slack')
-var googleAPI = require('./googleAssitant_with_API')
-var googleJson = require('./googleAssistant_with_JSON')
-var googleLogin = require('./googleLogin')
 const { DialogflowApp } = require('actions-on-google');
 app.use(bodyparser.json());
 app.use(express.static('html'));
