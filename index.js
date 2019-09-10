@@ -22,6 +22,10 @@ app.post('/getOpenOrders', (req, res) => {
     res.json({'openOrders':1,'date':2});
     });
 
+    app.get('/getOpenOrders1', (req, res) => { 
+        console.log(req.body);
+        res.json({'openOrders':1,'date':2});
+        });
 
 app.get('/multiply/', (req, res) => { 
 var result = req.query.data1*req.query.data2;
