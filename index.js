@@ -23,7 +23,7 @@ app.post('/getOpenOrders', async (req, res) => {
     });
 
     app.get('/getOpenOrders1', (req, res) => { 
-        console.log(req.body);
+        console.log(req);
         res.json({'openOrders':1,'date':2});
         });
 
