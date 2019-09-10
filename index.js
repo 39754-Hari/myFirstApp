@@ -17,7 +17,7 @@ console.log(req.body)
 });
 
 
-app.post('/getOpenOrders', (req, res) => { 
+app.post('/getOpenOrders', async (req, res) => { 
     console.log(req.body);
     res.json({'openOrders':1,'date':2});
     });
