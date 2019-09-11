@@ -24,7 +24,7 @@ app.post('/getOpenOrders', async (req, res) => {
 
     app.get('/getOpenOrders1', (req, res) => { 
         console.log(req);
-        res.json({'orderId':'1008689RT','date':2});
+        res.json({'orderId':'OR1008689','date':2});
         });
 
 app.get('/multiply/', (req, res) => { 
