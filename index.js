@@ -24,8 +24,10 @@ app.post('/getOpenOrders', async (req, res) => {
 
     app.get('/getOpenOrders1', (req, res) => { 
         console.log(req.query.body);
-        
-        res.json({'orderId':'OR1008689','date':2});
+        if(req.query.body.callFrom='+266696687')
+            res.json({'orderId':'OR1008689','date':2});
+        else
+            res.json({'orderId':''});
         });
 
 app.get('/multiply/', (req, res) => { 
