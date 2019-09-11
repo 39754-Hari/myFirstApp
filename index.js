@@ -23,7 +23,8 @@ app.post('/getOpenOrders', async (req, res) => {
     });
 
     app.get('/getOpenOrders1', (req, res) => { 
-        //console.log(req);
+        console.log(req.query.body);
+        
         res.json({'orderId':'OR1008689','date':2});
         });
 
