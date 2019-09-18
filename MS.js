@@ -9,7 +9,7 @@ var fs = require("fs");
 // service region (e.g., "westus"), and
 // the name of the file you want to run
 // through the speech recognizer.
-var subscriptionKey = "68b96872e789414f80378d4dbee7b2f0";
+var subscriptionKey = process.env.Key;//"";
 var serviceRegion = "westus"; // e.g., "westus"
 var filename = "./speech.wav"; // 16000 Hz, Mono
 
