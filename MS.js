@@ -13,6 +13,8 @@ var subscriptionKey = process.env.Key;//"";
 var serviceRegion = "westus"; // e.g., "westus"
 var filename = "./speech.wav"; // 16000 Hz, Mono
 
+console.log(subscriptionKey);
+
 // create the push stream we need for the speech sdk.
 var pushStream = sdk.AudioInputStream.createPushStream();
 
