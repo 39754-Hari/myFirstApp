@@ -11,7 +11,7 @@ var fs = require("fs");
 // through the speech recognizer.
 var subscriptionKey = "68b96872e789414f80378d4dbee7b2f0";
 var serviceRegion = "westus"; // e.g., "westus"
-var filename = "AudioToText.mp3"; // 16000 Hz, Mono
+var filename = "callRecord.mp3"; // 16000 Hz, Mono
 
 // create the push stream we need for the speech sdk.
 var pushStream = sdk.AudioInputStream.createPushStream();
